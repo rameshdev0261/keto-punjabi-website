@@ -1,0 +1,352 @@
+:root {
+    --primary: #ff6a00;
+    --primary-dark: #be5002;
+    --red: #cb0400;
+    --blue: #0074e8;
+    --orange: #dd7803;
+    --icon-grey: #607085;
+    --light-back: #faf9fc;
+    --dark-text: #211817;
+    --dark-grey: #625d7e;
+    --front-back: #faf4e1;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: myFontMed;
+    src: url(../fonts/Jost-Medium.ttf);
+}
+
+@font-face {
+    font-family: myFontLite;
+    src: url(../fonts/Jost-Light.ttf);
+}
+
+@font-face {
+    font-family: myFontBold;
+    src: url(../fonts/Jost-Bold.ttf);
+}
+
+@font-face {
+    font-family: myFontSemiBold;
+    src: url(../fonts/Jost-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: recoleta;
+    src: url(../fonts/Recoleta-Regular.otf);
+}
+
+.v-list--dense .v-list-item .v-list-item__title {
+    font-weight: 500 !important;
+}
+
+.admin-navbar .v-list--dense .v-list-item .v-list-item__title {
+    font-weight: 500 !important;
+}
+
+.v-tab {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    font-family: myFontMed;
+}
+
+.v-picker {
+    font-family: myFontMed !important;
+}
+
+.v-tab--active {
+    background: #0053f01c !important;
+}
+
+.v-tabs--vertical > .v-tabs-bar .v-tab {
+    justify-content: flex-start !important;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: myFont !important;
+    scroll-behavior: smooth !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: var(--primary);
+    color: white;
+    font-size: 14px;
+}
+
+.custom-file-upload i {
+    color: white !important;
+}
+
+.fields-label {
+    margin-bottom: 4px !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black !important;
+}
+
+.sub-text {
+    margin-bottom: 5px !important;
+    font-size: 17px;
+    margin-top: 9px;
+    color: grey !important;
+}
+
+.sub-text-2 {
+    margin-bottom: 5px !important;
+    font-size: 17px;
+    margin-top: 9px;
+    color: var(--light-text) !important;
+}
+
+.primary-text {
+    color: var(--primary) !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.v-label {
+    margin-bottom: 0px !important;
+    font-family: myFont !important;
+}
+
+.grey-text {
+    color: grey !important;
+}
+
+hr {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: myFontBold;
+    font-weight: 500;
+}
+
+p {
+    font-family: myFont;
+}
+
+.v-expansion-panel {
+    font-family: myFont;
+}
+
+span {
+    font-family: myFont;
+}
+
+.v-breadcrumbs__item--disabled {
+    font-family: myFont;
+}
+
+a {
+    text-decoration: none;
+    font-family: myFont;
+}
+
+input {
+    font-family: myFont;
+}
+
+table tbody tr {
+    font-family: myFont;
+}
+
+.v-btn {
+    text-transform: none !important;
+    font-size: 16px !important;
+}
+
+.v-btn__content {
+    font-weight: 500 !important;
+    font-family: myFontSemiBold !important;
+}
+
+.v-list-item__title {
+    font-family: myFontMed;
+}
+
+.b-white {
+    border: 1px solid white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-button {
+    width: 10px;
+    height: 5px;
+    background: #f1f1f1;
+    display: none;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: thin solid lightgray;
+}
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+.v-snack__content {
+    font-family: myFont !important;
+}
+
+.field-label {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 5px !important;
+    color: var(--dark-text);
+}
+
+.c-dark {
+    color: var(--dark-text) !important;
+}
+
+.c-primary {
+    color: var(--primary) !important;
+}
+
+/* Loader Styles start here */
+.loader-wrapper {
+    --line-width: 5px;
+    --curtain-color: #f1faee;
+    --outer-line-color: #a8dadc;
+    --middle-line-color: #457b9d;
+    --inner-line-color: #1d3557;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#object {
+    display: block;
+    position: relative;
+    top: 44%;
+    left: 48%;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    -webkit-animation: animate 1s infinite ease-in-out;
+    animation: animate 1s infinite ease-in-out;
+    z-index: 10000;
+}
+@-webkit-keyframes animate {
+    0% {
+        -webkit-transform: perspective(160px);
+    }
+    50% {
+        -webkit-transform: perspective(160px) rotateY(-180deg);
+    }
+    100% {
+        -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+        -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+        -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
+
+.hide-loader #object {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    background: var(--curtain-color);
+    width: 51%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.loader-wrapper .loader-section.section-left {
+    left: 0;
+    background: var(--primary);
+}
+.loader-wrapper .loader-section.section-right {
+    right: 0;
+    background: var(--primary);
+}
+
+/* Loaded Styles */
+.loaded .loader-wrapper .loader-section.section-left {
+    transform: translateX(-100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded .loader-wrapper .loader-section.section-right {
+    transform: translateX(100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded .loader {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.loaded .loader-wrapper {
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all 0.3s 1s ease-out;
+}
+
+/* Media */
+@media (min-width: 1264px) {
+    .container {
+        max-width: 1450px !important;
+    }
+}

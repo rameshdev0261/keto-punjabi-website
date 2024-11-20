@@ -1,0 +1,807 @@
+/* Mobile devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar-links-section {
+        display: none;
+    }
+
+    .nav-wrapper {
+        padding: 10px;
+    }
+
+    .nav-wrapper-2 .custom-nav {
+        padding: 15px;
+    }
+
+    .nav-wrapper .custom-nav {
+        padding: 15px;
+    }
+
+    .header-logo h1 {
+        font-size: 27px;
+    }
+
+    .menu-btn {
+        display: block !important;
+    }
+
+    .banner-container {
+        padding: 10px 0px;
+    }
+
+    .banner-grid {
+        display: none;
+    }
+
+    .banner-section {
+        padding-top: 78px !important;
+        padding: 0px;
+    }
+
+    .banner-img .go-to-down {
+        display: none;
+    }
+
+    .banner-detail .banner-card {
+        position: initial !important;
+        width: 100%;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    .banner-height {
+        height: auto !important;
+    }
+    .banner-height .v-carousel__item {
+        height: auto !important;
+    }
+
+    .banner-img {
+        padding-top: 0px !important;
+    }
+
+    .banner-img img {
+        height: 400px;
+    }
+
+    .banner-detail .banner-card h1 {
+        font-size: 28px !important;
+        margin-bottom: 10px;
+    }
+
+    .banner-detail .banner-card p {
+        font-size: 17px;
+        margin-top: 15px !important;
+    }
+
+    .whats-keto-section {
+        padding: 40px 15px;
+    }
+
+    .whats-keto-section h1 {
+        font-size: 2rem;
+    }
+
+    .whats-keto-section p {
+        margin: 0px;
+        font-size: 17px;
+    }
+
+    .whats-keto-img-section {
+        flex-wrap: wrap;
+    }
+
+    .whats-keto-img-section2 {
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .whats-keto-section img {
+        padding: 3px;
+        position: initial;
+    }
+
+    .whats-keto-img-section .img-k1 {
+        height: 5rem;
+        width: 5rem;
+        transform: none;
+        margin-right: 15px;
+    }
+
+    .whats-keto-img-section .img-k2 {
+        height: 7rem;
+        width: 7rem;
+        transform: none;
+        margin-right: 15px;
+    }
+
+    .whats-keto-img-section .img-k3 {
+        height: 5rem;
+        width: 5rem;
+        transform: none;
+    }
+
+    .whats-keto-img-section .img-k4 {
+        height: 6rem;
+        width: 6rem;
+        transform: none;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .whats-keto-img-section .img-k5 {
+        height: 5rem;
+        width: 5rem;
+        transform: none;
+        margin-top: 15px;
+    }
+
+    .whats-keto-img-section2 .img-k1 {
+        height: 5rem;
+        width: 5rem;
+        transform: none;
+        margin-right: 15px;
+    }
+
+    .whats-keto-img-section2 .img-k2 {
+        height: 7rem;
+        width: 7rem;
+        transform: none;
+        margin-right: 15px;
+    }
+
+    .whats-keto-img-section2 .img-k3 {
+        height: 5rem;
+        width: 5rem;
+        transform: none;
+        margin-right: 15px;
+    }
+
+    .whats-keto-img-section2 .img-k4 {
+        height: 4rem;
+        width: 4rem;
+        transform: none;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .about-section {
+        padding: 0px;
+    }
+
+    .about-card .about-section-detail {
+        padding: 30px;
+    }
+
+    .about-card .about-section-detail h1 {
+        font-size: 2rem;
+    }
+
+    .about-card .about-section-detail .desc {
+        font-size: 16px;
+    }
+
+    .about-card .owner-photo {
+        height: 400px;
+    }
+
+    .by-category-section {
+        padding: 40px 15px;
+    }
+
+    .big-title {
+        font-size: 2rem;
+    }
+
+    .latest-recipes-section {
+        padding: 40px 15px;
+    }
+
+    .latest-recipes-section h1 {
+        font-size: 2rem;
+    }
+
+    .recipe-lottie {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: -45px;
+        right: -27px;
+    }
+
+    .res-card {
+        margin: 0px;
+    }
+
+    .res-card__caption {
+        transform: translateY(37%);
+    }
+
+    .products-section {
+        padding: 40px 15px;
+    }
+
+    .footer-card {
+        padding: 40px 15px;
+    }
+
+    .footer-card .footer-title {
+        font-size: 3rem;
+    }
+
+    .footer-card .footer-desc {
+        font-size: 1.1rem;
+    }
+
+    .all-products-section {
+        padding: 40px 15px;
+    }
+
+    .all-recipe-section {
+        padding: 40px 15px;
+    }
+
+    .filter-card {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .about-banner img {
+        height: 500px;
+    }
+
+    .about-title {
+        transform: translate(4%, -50%);
+    }
+
+    .about-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-title .about-position {
+        font-size: 1.2rem;
+    }
+
+    .about-card-parent {
+        padding: 0px 15px;
+    }
+
+    .about-card2 {
+        padding: 40px;
+    }
+
+    .about-card2 h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-card2 .about-desc {
+        font-size: 1.1rem;
+    }
+
+    .section-heading {
+        font-size: 1.7rem;
+    }
+
+    .subscribe-channel-card {
+        padding: 20px;
+    }
+
+    .subscribe-channel-card h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-area {
+        margin-top: 70px !important;
+        padding: 40px 15px;
+    }
+
+    .contact-area h1 {
+        font-size: 2rem !important;
+    }
+
+    .contact-area .contact-desc {
+        font-size: 1.1em;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .blog-list-section {
+        margin-top: 31px;
+    }
+
+    .blog-d-card {
+        max-width: 90% !important;
+    }
+
+    .single-recipe-section {
+        padding: 150px 15px;
+    }
+
+    .single-recipe-section h1 {
+        font-size: 2rem;
+    }
+
+    .recipe-desc-bold {
+        margin-bottom: 30px;
+    }
+
+    .loader-wrapper #object {
+        top: 45%;
+        left: 42%;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/*  iPads, Tablets (Portrait)*/
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar-links-section {
+        display: none;
+    }
+
+    .nav-wrapper {
+        padding: 10px;
+    }
+
+    .nav-wrapper-2 .custom-nav {
+        padding: 15px;
+    }
+
+    .nav-wrapper .custom-nav {
+        padding: 15px;
+    }
+
+    .header-logo h1 {
+        font-size: 27px;
+    }
+
+    .menu-btn {
+        display: block !important;
+    }
+
+    .banner-container {
+        padding: 10px 0px;
+    }
+
+    .banner-grid {
+        display: none;
+    }
+
+    .banner-section {
+        padding-top: 78px !important;
+        padding: 0px;
+    }
+
+    .banner-img .go-to-down {
+        display: none;
+    }
+
+    .banner-detail .banner-card {
+        position: initial !important;
+        width: 100%;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    .banner-height {
+        height: auto !important;
+    }
+    .banner-height .v-carousel__item {
+        height: auto !important;
+    }
+
+    .banner-img {
+        padding-top: 0px !important;
+    }
+
+    .banner-img img {
+        height: 400px;
+    }
+
+    .banner-detail .banner-card h1 {
+        font-size: 28px !important;
+        margin-bottom: 10px;
+    }
+
+    .banner-detail .banner-card p {
+        font-size: 17px;
+        margin-top: 15px !important;
+    }
+
+    .whats-keto-section {
+        padding: 40px 40px;
+    }
+
+    .whats-keto-section h1 {
+        font-size: 2rem;
+    }
+
+    .whats-keto-section p {
+        margin: 0px;
+        font-size: 17px;
+    }
+
+    .whats-keto-img-section {
+        flex-wrap: wrap;
+    }
+
+    .whats-keto-img-section2 {
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .whats-keto-section img {
+        padding: 3px;
+        position: initial;
+    }
+
+    .whats-keto-img-section img {
+        height: 5rem !important;
+        width: 5rem !important;
+        margin: 0px 10px !important;
+        transform: none !important;
+    }
+
+    .whats-keto-img-section2 img {
+        height: 5rem !important;
+        width: 5rem !important;
+        margin: 0px 10px !important;
+        transform: none !important;
+    }
+
+    .about-section {
+        padding: 0px;
+    }
+
+    .about-card .owner-photo {
+        height: 550px;
+    }
+
+    .about-card .about-section-detail {
+        padding: 40px;
+    }
+
+    .about-card .about-section-detail h1 {
+        font-size: 2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .about-card .about-section-detail .desc {
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .by-category-section {
+        padding: 40px 80px;
+    }
+
+    .big-title {
+        font-size: 2rem;
+    }
+
+    .latest-recipes-section {
+        padding: 40px 80px;
+    }
+
+    .latest-recipes-section h1 {
+        font-size: 2rem;
+    }
+
+    .recipe-lottie {
+        width: 184px;
+        height: 100px;
+    }
+
+    .latest-recipes-section p {
+        font-size: 1.1rem;
+    }
+
+    .res-card__thumb {
+        max-height: 300px;
+    }
+
+    .res-card img {
+        height: 327px;
+    }
+
+    .res-card {
+        margin: 0px;
+    }
+
+    .res-card__caption {
+        transform: translateY(-6%);
+    }
+
+    .products-section {
+        padding: 40px 80px;
+    }
+
+    .product-wrapper {
+        height: 360px;
+    }
+
+    .product-wrapper .product-con .top {
+        height: 72%;
+    }
+
+    .footer-card {
+        padding: 40px 80px;
+    }
+
+    .footer-card .footer-title {
+        font-size: 4rem;
+    }
+
+    .all-products-section {
+        padding: 40px 80px;
+    }
+
+    .all-recipe-section {
+        padding: 40px 80px;
+    }
+
+    .single-recipe-section {
+        padding: 120px 80px;
+    }
+
+    .recipe-desc-bold {
+        margin-bottom: 30px;
+    }
+
+    .about-card-parent {
+        padding: 0px 20px;
+    }
+
+    .youtube-stats h1 {
+        font-size: 2rem;
+    }
+
+    .youtube-stats p {
+        font-size: 1.1rem;
+    }
+
+    .subscribe-channel-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-area {
+        margin-top: 70px !important;
+        padding: 40px 80px;
+    }
+
+    .contact-area h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .contact-area .contact-desc {
+        font-size: 1.2em;
+    }
+
+    .blog-list-section {
+        margin-top: -39px;
+    }
+
+    .blog-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .loader-wrapper #object {
+        top: 47%;
+        left: 46%;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Small screens, laptops or ipad (Landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-wrapper {
+        padding: 20px;
+    }
+
+    .navbar-links-section ul li a {
+        padding: 10px;
+    }
+
+    .nav-wrapper .custom-nav {
+        padding: 20px;
+    }
+
+    .header-logo h1 {
+        font-size: 24px;
+    }
+
+    .banner-container {
+        padding: 20px;
+    }
+
+    .banner-detail .banner-card {
+        top: 6rem;
+        padding: 36px;
+        width: 34rem;
+    }
+
+    .banner-detail .banner-card h1 {
+        font-size: 30px !important;
+    }
+
+    .banner-detail .banner-card p {
+        font-size: 16px;
+    }
+
+    .banner-height {
+        height: 600px !important;
+    }
+    .banner-height .v-carousel__item {
+        height: 600px !important;
+    }
+
+    .banner-img {
+        padding-top: 0px !important;
+    }
+
+    .banner-img img {
+        height: 615px;
+    }
+
+    .banner-img .go-to-down {
+        padding: 30px;
+    }
+
+    .banner-img .go-to-down i {
+        font-size: 40px !important;
+    }
+
+    .whats-keto-img-section2 {
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .whats-keto-section {
+        padding: 50px 100px;
+    }
+
+    .whats-keto-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .whats-keto-section img {
+        padding: 3px;
+        position: initial;
+    }
+
+    .whats-keto-img-section img {
+        height: 7rem !important;
+        width: 7rem !important;
+        margin: 0px 10px !important;
+        transform: none !important;
+    }
+
+    .whats-keto-img-section2 img {
+        height: 7rem !important;
+        width: 7rem !important;
+        margin: 0px 10px !important;
+        transform: none !important;
+    }
+
+    .about-section {
+        padding: 0px;
+    }
+
+    .big-title {
+        font-size: 2.2rem;
+    }
+
+    .nav-wrapper-2 .custom-nav {
+        padding: 20px;
+    }
+
+    .latest-recipes-section {
+        padding: 50px 100px;
+    }
+
+    .latest-recipes-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .recipe-lottie {
+        width: 184px;
+        height: 100px;
+    }
+
+    .res-card__thumb {
+        max-height: 300px;
+    }
+
+    .res-card img {
+        height: 327px;
+    }
+
+    .res-card {
+        margin: 0px;
+    }
+
+    .res-card__caption {
+        transform: translateY(-6%);
+    }
+
+    .res-card:hover .res-card__caption {
+        transform: translateY(-97px);
+    }
+
+    .product-wrapper {
+        height: 350px;
+    }
+
+    .product-wrapper .product-con .top {
+        height: 69%;
+    }
+
+    .product-wrapper .product-con .bottom h2 {
+        font-size: 1.3rem;
+    }
+
+    .footer-card .footer-title {
+        font-size: 3rem;
+    }
+
+    .footer-card .footer-desc {
+        font-size: 1.2rem;
+    }
+
+    .footer-card h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .about-card-parent {
+        padding: 0px 50px;
+    }
+
+    .youtube-stats h1 {
+        font-size: 2.3rem;
+    }
+
+    .contact-area {
+        margin-top: 107px !important;
+        padding: 50px 100px;
+    }
+
+    .all-recipe-section {
+        padding: 50px 100px;
+    }
+
+    .single-recipe-section {
+        padding: 150px 100px;
+    }
+
+    .single-recipe-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .recipe-desc-bold {
+        margin-bottom: 30px;
+    }
+
+    .loader-wrapper #object {
+        top: 45%;
+        left: 45%;
+    }
+}
+
+/* Small screens, laptops or ipad (Landscape) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/* Extra large screens, TV */
+@media (min-width: 1201px) {
+}
