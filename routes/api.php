@@ -32,6 +32,7 @@ Route::post('login', [UserController::class, "login"]);
 Route::get('sliders', [HomeSliderController::class, "index"]);
 Route::get('recipes', [RecipeController::class, "index"]);
 Route::post('search_recipes', [RecipeController::class, "search_recipes"]);
+Route::post('filter_recipes', [RecipeController::class, "filter_recipes"]);
 Route::get('categories', [CategoryController::class, "index"]);
 
 Route::get('get_navbar_menu', [ApiController::class, "getNavbarItems"]);

@@ -28,6 +28,7 @@
 <script>
 export default {
     data: () => ({
+        selectedItem:"",
         menu_links: [
             {
                 name: "Home",

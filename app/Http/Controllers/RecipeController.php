@@ -156,4 +156,16 @@ class RecipeController extends ResponseController
         $data = $query->get();
         return $this->actionSuccess("Success", $data);
     }
+    public function filter_recipes(Request $request)
+    {
+        $query = Recipe::query();
+        if ($request->category_ids) {
+            $query->whereIn("category_id", $request->category_ids);
+        }
+        if ($request->diet_type) {
+            $query->where("diet_type", $request->diet_type);
+        }
+        $data = $query->get();
+        return $this->actionSuccess("Success", $data);
+    }
 }
