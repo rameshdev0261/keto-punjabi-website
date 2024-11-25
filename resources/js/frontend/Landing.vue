@@ -8,9 +8,8 @@
           :videoLink="dashboard.video_link"
         />
         
+        <RecipesByCategories :description="dashboard.my_recipe_description"/>
         <WhatsKeto :description="dashboard.keto_diet_description" />
-        <RecipesByCategories :description="dashboard.my_recipe_description"
-          :latestRecipes="latest_recipes" />
         <AboutSection :ownerBox="dashboard.owner_box" />
         <ByCategories :categories="cats" />
         <LatestRecipes

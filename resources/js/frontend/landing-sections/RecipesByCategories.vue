@@ -3,7 +3,9 @@
     <v-row>
       <v-col cols="12" sm="6" md="6">
         <p class="c-primary section-mini-title">Recipes</p>
-        <h1 class="section-heading">250+ Healthy <span>Keto Recipes.</span></h1>
+        <h1 class="section-heading">
+          {{ total }}+ Healthy <span>Keto Recipes.</span>
+        </h1>
         <p>
           {{ description }}
         </p>
@@ -47,9 +49,7 @@
     <v-row>
       <template v-if="Recipes.length > 0">
         <v-col
-          v-for="(item, i) in Recipes.length > 7
-            ? Recipes.slice(0, 7)
-            : Recipes"
+          v-for="(item, i) in Recipes"
           :key="i"
           cols="12"
           sm="6"
@@ -65,7 +65,6 @@
                     {{ item.title }}
                   </h2>
                 </div>
-
                 <a :href="'/recipe/' + item.id" class="res-card__button"
                   >Read more</a
                 >
@@ -73,14 +72,11 @@
             </figure>
           </div>
         </v-col>
-
-        <v-col v-if="Recipes.length > 7" cols="12" sm="4" md="3">
-          <a href="/all-recipes">
-            <div class="view-more-card">
-              <v-icon>mdi-arrow-right-circle</v-icon>
-              <p class="mb-0">View More..</p>
-            </div></a
-          >
+        <v-col v-if="!allLoaded" cols="12" sm="4" md="3">
+          <div class="view-more-card" @click="loadMoreRecipes">
+            <v-icon>mdi-arrow-right-circle</v-icon>
+            <p class="mb-0">View More..</p>
+          </div>
         </v-col>
       </template>
       <template v-else>
@@ -92,6 +88,7 @@
         </v-col>
       </template>
     </v-row>
+
     <!-- Filter Dialog -->
     <v-dialog v-model="dialog" max-width="380px">
       <v-card>
@@ -136,16 +133,18 @@
 
 <script>
 import axios from "axios";
+
 export default {
-  components: {},
+  props: ["description"],
   data: () => ({
     dialog: false,
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero modi error quasi fugit debitis quidem alias fuga ipsum. Incidunt tenetur dignissimos porro aliquid alias nesciunt deserunt eius ad fuga quis?",
     Recipes: [],
     category_ids: [],
-    allCategoriesSelected: false, // For "Select All" checkbox
-    categories: [], // Populated by getCategories()
+    allCategoriesSelected: false,
+    categories: [],
+    page: 1,
+    allLoaded: false,
+    total: 0,
   }),
 
   created() {
@@ -161,52 +160,46 @@ export default {
   },
   methods: {
     getCategories() {
-      axios
-        .get("/api/categories")
-        .then((res) => {
-          this.categories = res.data.data.map((element) => {
-            return {
-              text: element.name,
-              value: element.id,
-            };
-          });
-        })
-        .catch((e) => {});
+      axios.get("/api/categories").then((res) => {
+        this.categories = res.data.data.map((element) => ({
+          text: element.name,
+          value: element.id,
+        }));
+      });
     },
     getRecipes() {
-      var obj = {};
-      if (this.category_ids.length) {
-        obj.category_ids = this.category_ids;
-      }
       axios
-        .post("/api/filter_recipes", obj)
-        .then((response) => {
-          this.Recipes = response.data.data;
+        .post("/api/filter_recipes", {
+          category_ids: this.category_ids,
+          page: this.page,
         })
-        .catch((e) => {});
+        .then((response) => {
+          if (!this.total) {
+            this.total = response.data.data.total;
+          }
+          const newRecipes = response.data.data.data;
+          if (newRecipes.length < 7) {
+            this.allLoaded = true;
+          }
+          this.Recipes.push(...newRecipes);
+        });
+    },
+    loadMoreRecipes() {
+      this.page++;
+      this.getRecipes();
     },
     toggleAllCategories() {
-      if (this.allCategoriesSelected) {
-        // Select all
-        this.category_ids = this.categories.map((category) => category.value);
-      } else {
-        // Deselect all
-        this.category_ids = [];
-      }
+      this.category_ids = this.allCategoriesSelected
+        ? this.categories.map((category) => category.value)
+        : [];
     },
     applyFilter() {
+      this.Recipes = [];
+      this.page = 1;
+      this.allLoaded = false;
       this.dialog = false;
       this.getRecipes();
     },
   },
 };
 </script>
-
-<style>
-.no-data-message {
-  font-size: 18px;
-  color: #888;
-  margin-top: 20px;
-}
-</style>
-
